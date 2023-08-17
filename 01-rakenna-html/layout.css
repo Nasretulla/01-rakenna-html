@@ -1,0 +1,19 @@
+body {
+    font-size: 62.5;
+    
+}
+
+.ylatunniste{
+    border: dotted 1px black;
+    padding: 0.5rem;
+}
+
+#rinnakkain {
+    border: dotted 1px black;
+    padding: 0.5rem;
+    display: flex;
+}
+
+#footer{
+    border: dotted 1px black;
+}

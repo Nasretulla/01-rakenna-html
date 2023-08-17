@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ohjelmointi</title>
+    
+</head>
+<body>
+    <!---Tehdään  html rakenne kokonaisuudessaa javascriptilla-->
+    
+   
+
+
+
+
+
+<script>
+
+const runko = document.body;
+const osa1 = document.createElement("div");
+osa1.id = "div1"
+
+runko.insertBefore(osa1, runko.firstChild);
+runko.prepend(osa1);
+const kappale = document.createElement("p");
+
+kappale.id = "p1";
+kappale.textContent = "Tämä on ensimmäisen kappaleen teksti.";
+document.getElementById("div1").appendChild(kappale);
+
+const kappale2 = document.createElement("p");
+kappale2.id = "p2";
+kappale2.textContent = "Tämä on toisen kappaleen teksti.";
+document.getElementById("div1").appendChild(kappale2);
+
+
+const kappale3 = document.createElement("p");
+kappale3.id = "p3";
+kappale3.textContent = "Tämä on kolmanen kappaleen teksti.";
+document.getElementById("div1").appendChild(kappale3);
+
+
+
+
+</script>
+    
+</body>
+</html>

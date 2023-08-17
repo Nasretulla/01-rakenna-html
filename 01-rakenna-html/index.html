@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+
+
+const runko = document.body;
+const header = document.createElement("header");
+header.className = "ylatunniste";
+runko.appendChild(header);
+
+
+const h1 = document.createElement("h1");
+h1.innerHTML = "Tämä on artikkeiln otsikko";
+header.appendChild(h1);
+
+const kappale = document.createElement("p");
+kappale.innerHTML = "Ensimmäinen kappale! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
+header.appendChild(kappale);
+
+
+const section = document.createElement("section");
+section.id = "rinnakkain";
+runko.appendChild(section);
+
+
+const kappale1 = document.createElement("p");
+kappale1.innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
+section.appendChild(kappale1);
+
+const figure =  document.createElement("figure");
+figure.id = "kuvanpaikka";
+section.appendChild(figure);
+const img = document.createElement("img"); 
+img.src = "https://picsum.photos/200/301";
+figure.appendChild(img);
+
+
+
+
+const footer = document.createElement("p");
+footer.id = "footer";
+footer.innerHTML = "@ Opiskelija 2023";
+runko.appendChild(footer);
+
+
+    </script>
+    
+</body>
+</html>
